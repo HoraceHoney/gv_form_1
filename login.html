@@ -1,0 +1,35 @@
+<html>
+<title>login page</title>
+<head>
+    <link rel="stylesheet" href="css/login.css">
+    <script src =js/login.js ></script>
+</head>
+
+
+<body><form action="php/login.php" method="post">
+  <div class="imgcontainer">
+    <img src="/assets/profileAvatar.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    //no database connectvity so it is directed to profile.html on clicking login
+    <button type="submit" onclick="do_login()"><a href="profile.html">Login</a></button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <br><br>
+    <a href="register.html">Need an Account? Register</a>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</body>
+</html>
